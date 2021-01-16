@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=picture.0" />
     <meta name="description" content="Rivka's Personal Website" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,13 +17,13 @@
     <header>
         <div class="header-fix">
             <div class="container logo-nav-container">
-                <a class="far fa-laugh-wink" href="#"></a>
+                <a class="far fa-laugh-wink home" href="#"></a>
                 <!-- <span class="fas fa-bars"></span> -->
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#">Projects</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Clients</a></li>
                         <li><a href="#">Contact Me</a></li>
                     </ul>
                 </nav>
@@ -34,12 +35,13 @@
             </video>
             <div class="container text-up">
                 <div class="text-up-all">
-                    <h1 class="title-up">Rivka Kessem</h1>
-                    <h3 class="subtitle-up">WEB DEVELOPER</h3>
-                    <a href="#" class="button up">Subscribe Now</a>
+                    <h1 class="title-up">Hey, I'm Rivka </h1>
+                    <i class="far fa-laugh-wink hello"></i>
+                    <h3 class="subtitle-up">UX Designer and Web Developer</h3>
+                    <a href="#" class="button up">Let's talk</a>
                 </div>
             </div>
-            <div class="wave">
+            <div class="wave" id="about">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M0.00,0.00 C150.00,100.00 350.00,100.00 500.00,0.00 L500.00,150.00 L0.00,150.00 Z">
                     </path>
@@ -51,7 +53,7 @@
             <div class="container" style="padding-top: 0;">
                 <div class="about-me">
                     <h2 class="title">About Me</h2>
-                    <h3 class="subtitle">Nombre de Red Social Aqui</h3>
+                    <h3 class="subtitle">Hi, My name is rebeca. It is really nice that you are here!</h3>
                     <div class="me">
                         <img src="img/picture6.jpg" alt="hi! My name is Rivka">
                     </div>
@@ -82,67 +84,128 @@
             </div>
         </section>
         <section class="projects">
-            <div class="projects-text">
+            <div class="inicial-text">
                 <h2 class="title white">Projects</h2>
-                <h3 class="subtitle white">Nombre de Red Social Aqui</h3>
+                <h3 class="subtitle white">Look at some projects that I have done</h3>
             </div>
-            <div class="gallery">
-                <div class="images">
+            <div class="projects-gallery">
+                <article class="projects-gallery-item">
                     <img src="img/picture1.jpeg" alt="">
-                </div>
-                <div class="images">
-                    <img src="img/picture2.jpeg" alt="">
-                </div>
-                <div class="images">
-                    <img src="img/picture3.jpeg" alt="">
-                </div>
-                <div class="images">
-                    <img src="img/picture4.jpeg" alt="">
-                    <div class="encima">
-                        <h2>Rivka Kessem</h2>
-                        <div></div>
+                    <div class="projects-hover">
+                        <h2 class="title white">Project</h2>
+                        <i class="far fa-file-alt project-icon"></i>
                     </div>
-                </div>
-                <div class="images">
+                </article>
+
+                <article class="projects-gallery-item">
+                    <img src="img/picture2.jpeg" alt="">
+                    <div class="projects-hover">
+                        <h2 class="title white">Project</h2>
+                        <i class="far fa-file-alt project-icon"></i>
+                    </div>
+                </article>
+
+                <article class="projects-gallery-item">
+                    <img src="img/picture3.jpeg" alt="">
+                    <div class="projects-hover">
+                        <h2 class="title white">Project</h2>
+                        <i class="far fa-file-alt project-icon"></i>
+                    </div>
+                </article>
+
+                <article class="projects-gallery-item">
+                    <img src="img/picture4.jpeg" alt="">
+                    <div class="projects-hover">
+                        <h2 class="title white">Project</h2>
+                        <i class="far fa-file-alt project-icon"></i>
+                    </div>
+                </article>
+
+                <article class="projects-gallery-item">
                     <img src="img/picture5.jpeg" alt="">
-            </div>
+                    <div class="projects-hover">
+                        <h2 class="title white">Project</h2>
+                        <i class="far fa-file-alt project-icon"></i>
+                    </div>
+                </article>
         </section>
-        <section class="members">
+
+        <section class="services">
             <div class="container">
-                <h2 class="title">Our Team</h2>
-                <h3 class="subtitle">Know our Work Team</h3>
+                <div class="about-me">
+                    <h2 class="title">Services</h2>
+                    <h3 class="subtitle">Know the areas that I can help you</h3>
+                </div>
                 <div class="cards">
                     <div class="card">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/564/564419.svg" alt="">
-                        <h4>Rivka Kessem</h4>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <h4>UX Design</h4>
+                        <h5>Lorem ipsum dolor sit.</h5>
                     </div>
                     <div class="card">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/564/564419.svg" alt="">
-                        <h4>Rivka Kessem</h4>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <h4>Interface Design</h4>
+                        <h5>Lorem ipsum dolor sit.</h5>
                     </div>
                     <div class="card">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/564/564419.svg" alt="">
-                        <h4>Rivka Kessem</h4>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <h4>Web Development</h4>
+                        <h5>Lorem ipsum dolor sit.</h5>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="background"></section>
-        <!-- <div class="sesgo-arriba"></div> -->
-        <div class="container">
-            <h2 class="title">Our Sponsors</h2>
-            <h3 class="subtitle">Meet some of our sponsors</h3>
-            <div class="clients">
-                <div class="client"><img src="img/logo.svg" alt=""></div>
-                <div class="client"><img src="img/logo.svg" alt=""></div>
-                <div class="client"><img src="img/logo.svg" alt=""></div>
+        <section class="testimony">
+            <div class="inicial-text">
+                <h2 class="title dark">Testimony</h2>
+                <h3 class="subtitle dark">What do people think of my services?</h3>
             </div>
-            <h3 class="subtitle-sponsors special">...And many more Clients</h3>
-        </div>
-        </main>
+            <div class="clients-grid">
+                <article class="clients-card">
+                    <div class="clients-person">
+                        <div class="client-img">
+                            <img id="client1" src="https://image.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg"
+                                alt="">
+                        </div>
+                        <div class="client-text ">
+                            <h3>Carlos Fuentes</h3>
+                            <h4>CEO de empresa mobila</h4>
+                        </div>
+                        <p class="testimony-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, illo!</p> 
+                    </div>
+                </article>
+                <article class="clients-card">
+                    <div class="clients-person">
+                        <div class="client-img">
+                            <img id="client2" src="https://image.freepik.com/foto-gratis/empresaria-confiada-sonriente-que-presenta-brazos-cruzados_1262-20950.jpg"
+                                alt="">
+                            </div>
+                        <div class="client-text">
+                            <h3>Carlos Fuentes</h3>
+                            <h4>CEO de empresa mobila</h4>
+                        </div>
+                        <p class="testimony-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, illo!</p> 
+                    </div>
+                </article>
+                <article class="clients-card">
+                    <div class="clients-person">
+                        <div class="client-img">
+                            <img id="client3" src="https://image.freepik.com/foto-gratis/apuesto-hombre-afroamericano-apoyo-que-muestra-pulgar-arriba-aprobacion-como-idea-elogia-buena-eleccion_176420-25204.jpg"
+                                alt="">
+                            </div>
+                        <div class="client-text">
+                            <h3>Carlos Fuentes</h3>
+                            <h4>CEO de empresa mobila</h4>
+                        </div>
+                        <p class="testimony-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, illo!</p> 
+                    </div>
+                </article>
+                
+            </div>
+            <h3 class="subtitle-sponsors special">...View more Testimony's Clients</h3>
+            
+        </section>
+    </main>
     <footer>
         <div class="container">
             <h2 class="title footer">Contact me</h2>
