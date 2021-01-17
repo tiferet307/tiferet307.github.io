@@ -111,7 +111,7 @@ z-index: 1;
             }
 
 /* bar navigation for moviles - not ended i have to study more javascript :D*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .fa-bars{
     display: block;
     cursor: pointer;
@@ -330,7 +330,7 @@ header .wave{
     margin-top: 10px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .projects-gallery{
         height: 35rem;
         display: grid;
@@ -344,7 +344,7 @@ header .wave{
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .projects-gallery{
         height: 30rem;
         display: grid;
@@ -422,9 +422,10 @@ header .wave{
 .clients-card{
     width: 100%;
     height: 100%;
+    left:0;
     margin: auto;
     background-color: #fff;
-    box-shadow: 0px 0px 15px 0px rgb(5, 5, 5);
+    box-shadow: 0px 0px 15px 0px rgb(21, 34, 46);
     border-radius: 5px;
     padding: 30px 0;
     overflow: hidden;
@@ -462,18 +463,58 @@ header .wave{
     margin-left: -3.5em;
 }
 
-@media (max-width: 1445px) and (min-width: 1120px) {
+.client-text{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.testimony h4{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.final{
+    padding-bottom: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.final:hover{
+    color:var(--color-primary);
+    font-style: italic;
+}
+@media screen and (max-width: 1445px) and (min-width: 1120px) {
     .clients-grid{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-auto-rows: 20em;
         grid-gap: 1.5rem;
         padding: 0 15rem 6rem 15rem;
         background-color:red
     }
-    .clients-card:nth-child(3){
-        grid-column: span 2;
-        grid-row: 2;
-        height: 18em;
+        .clients-card{
+            width: 100%;
+            height: 100%;
+            left:0;
+            /* margin: auto; */
+            background-color: #fff;
+            box-shadow: 0px 0px 15px 0px rgb(5, 5, 5);
+            border-radius: 5px;
+            padding: 0;
+            overflow: hidden;
+        }
+            .clients-card:nth-child(3){
+                grid-column: span 2;
+                grid-row: 2;
+                height: 18em;
+            }
+}
+
+@media screen and (max-width: 768px) {
+    .clients-grid{
+        grid-template-columns: auto;
+        padding: 0 2rem 6rem 2rem;
+        grid-gap: 20px;
     }
-} 
+}
